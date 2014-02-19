@@ -7,123 +7,22 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1187.39">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Monaco}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Monaco; min-height: 15.0px}
-    span.s1 {text-decoration: underline}
-    span.Apple-tab-span {white-space:pre}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Monaco; min-height: 15.0px}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
-<p class="p1">&lt;!--</p>
-<p class="p1">This page uses the Bootstrap files through the links.</p>
-<p class="p1">--&gt;</p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;title&gt;#{get 'title' /}&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;meta <span class="s1">charset</span>="${_response_encoding}"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;link <span class="s1">rel</span>="<span class="s1">stylesheet</span>" media="screen" <span class="s1">href</span>="@{'/public/<span class="s1">stylesheets</span>/main.css'}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#{get 'moreStyles' /}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;link <span class="s1">rel</span>="shortcut icon" type="image/<span class="s1">png</span>" <span class="s1">href</span>="@{'/public/images/favicon.png'}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">       </span>&lt;!-- &lt;script <span class="s1">src</span>="http://code.jquery.com/jquery-2.0.3.min.js" type="text/<span class="s1">javascript</span>" <span class="s1">charset</span>="${_response_encoding}"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#{get 'moreScripts' /}--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;meta name="<span class="s1">viewport</span>" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;!-- Latest compiled and <span class="s1">minified</span> CSS --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;link <span class="s1">rel</span>="<span class="s1">stylesheet</span>" <span class="s1">href</span>="//netdna.bootstrapcdn.com/bootstrap/3.0.3/<span class="s1">css</span>/bootstrap.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;link <span class="s1">rel</span>="<span class="s1">stylesheet</span>" media="screen" <span class="s1">href</span>="@{'/public/<span class="s1">stylesheets</span>/styles.css'}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;link <span class="s1">rel</span>"<span class="s1">stylesheet</span>" <span class="s1">href</span>="https://gist.github.com/pseidemann/4458612"&gt;</p>
-<p class="p2"><span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space"> </span>&lt;!-- <span class="Apple-converted-space"> </span></p>
-<p class="p1">red and blue <span class="s1">colour</span> style has used to give the different <span class="s1">colour</span> to the text.<span class="Apple-converted-space">       </span></p>
-<p class="p1"><span class="Apple-converted-space"> </span>--&gt;<span class="Apple-converted-space">         </span></p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;style&gt; <span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">         </span>.red {</p>
-<p class="p1"><span class="Apple-tab-span">	</span> <span class="Apple-converted-space">            </span>color: red;<span class="Apple-tab-span">	</span><span class="Apple-converted-space">             </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.blue {</p>
-<p class="p1"><span class="Apple-tab-span">	</span> <span class="Apple-converted-space">          </span>color: blue;</p>
-<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">           </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1">&lt;!--<span class="Apple-converted-space"> </span></p>
-<p class="p1">Below style has used for hover the mouse position.</p>
-<p class="p1"><span class="Apple-converted-space"> </span>--&gt; <span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space"> </span>$('[data-toggle="<span class="s1">tooltip</span>"]').<span class="s1">tooltip</span>({</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'placement': 'top'</p>
-<p class="p1">});</p>
-<p class="p1">$('[data-toggle="<span class="s1">popover</span>"]').<span class="s1">popover</span>({</p>
-<p class="p1"><span class="Apple-converted-space">    </span>trigger: 'hover',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>'placement': 'top'</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1">}); <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/style&gt;<span class="Apple-converted-space">       </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/head&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1">&lt;!--<span class="Apple-converted-space"> </span></p>
-<p class="p1">Body part has mostly the Bootstrap functionality.</p>
-<p class="p1"><span class="Apple-converted-space"> </span>--&gt; <span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">   </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class = "<span class="s1">navbar</span> <span class="s1">navbar</span>-default <span class="s1">navbar</span>-static-top"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;div class = "container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;!--<span class="Apple-converted-space">  </span>&lt;a <span class="s1">href</span> = "#" class = "<span class="s1">navbar</span>-brand"&gt;ReaChUniQue&lt;/a&gt;--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">       </span>&lt;!--<span class="Apple-converted-space">    </span>&lt;p align= "center" ;class = "<span class="s1">navbar</span>-brand" style="background-color:#F8F8F8<span class="Apple-converted-space">  </span>; font-size:40px"&gt; &lt;img <span class="s1">src</span>="@{'/public/images/favicon.png'}" height="60" width="60"&gt;&lt;span style="color:blue"&gt;<span class="s1">Rea</span>&lt;/span&gt;&lt;span style="color:green"&gt;<span class="s1">Ch</span>&lt;/span&gt;&lt;span style="color:navy"&gt;<span class="s1">Uni</span>&lt;/span&gt;&lt;span style="color:black"&gt;<span class="s1">Que</span>&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class = "<span class="s1">navbar</span>-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class = "icon-bar"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class = "icon-bar"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class = "icon-bar"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class = "icon-bar"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class = "icon-bar"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class = "collapse <span class="s1">navbar</span>-collapse navHeaderCollapse"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="<span class="s1">nav</span> <span class="s1">navbar</span>-<span class="s1">nav</span> <span class="s1">navbar</span>-right"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;li&gt;<span class="Apple-converted-space">  </span>&lt;p align= "center" ;class = "<span class="s1">navbar</span>-brand" style="background-color:#F8F8F8 "&gt; &lt;img <span class="s1">src</span>="@{'/public/images/favicon.png'}" height="60" width="60"&gt;&lt;span style="color:blue"&gt;<span class="s1">Rea</span>&lt;/span&gt;&lt;span style="color:green"&gt;<span class="s1">Ch</span>&lt;/span&gt;&lt;span style="color:navy"&gt;<span class="s1">Uni</span>&lt;/span&gt;&lt;span style="color:black"&gt;<span class="s1">Que</span>&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;/li&gt; <span class="Apple-converted-space">         </span></p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;li&gt;&lt;a <span class="s1">href</span>= "/home"&gt;&lt;span class="<span class="s1">glyphicon</span> <span class="s1">glyphicon</span>-home"&gt;&lt;/span&gt; Home&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;li&gt;&lt;a <span class="s1">href</span> = "/documentation"&gt;&lt;span class="<span class="s1">glyphicon</span> <span class="s1">glyphicon</span>-book"&gt;&lt;/span&gt; Documentation&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;li&gt;&lt;a <span class="s1">href</span> = "/examples"&gt;&lt;span class="<span class="s1">glyphicon</span> <span class="s1">glyphicon</span>-eye-open"&gt;&lt;/span&gt; Examples&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;li&gt;&lt;a <span class="s1">href</span> = "https://github.com/Ashwini607/ReaChUniQue"&gt;&lt;span class="<span class="s1">glyphicon</span> <span class="s1">glyphicon</span>-folder-open"&gt;&lt;/span&gt; Source code&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">             </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">     </span>&lt;div class ="container"&gt;<span class="Apple-converted-space">   </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>#{doLayout /}</p>
-<p class="p1"><span class="Apple-converted-space">     </span><span class="s1">&lt;/div&gt;</span> <span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">     </span></p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">     </span>&lt;div class ="container"&gt; <span class="Apple-converted-space">   </span></p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="<span class="s1">navbar</span> <span class="s1">navbar</span>-default <span class="s1">navbar</span>-fixed-bottom"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">               </span>&lt;div class = "container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- L<span class="Apple-converted-space">  </span>&lt;p class = "<span class="s1">navbar</span>-text pull-left"&gt;Application Built By <span class="s1">Ashwini</span> <span class="s1">Kumar</span>&lt;/p&gt; --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                      </span>&lt;a <span class="s1">href</span> = "http://www.ebi.ac.uk/rdf/" class = "<span class="s1">navbar</span>-<span class="s1">btn</span> <span class="s1">btn</span>-danger <span class="s1">btn</span> pull-right"&gt;use RDF platform&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">               </span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">           </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">&lt;/div&gt;</span><span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                 </span>&lt;!-- Latest compiled and <span class="s1">minified</span> JavaScript --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;script <span class="s1">src</span> = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">         </span>&lt;script <span class="s1">src</span>="//netdna.bootstrapcdn.com/bootstrap/3.0.3/<span class="s1">js</span>/bootstrap.min.js"&gt;&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space"> </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),</p>
-<p class="p1"><span class="Apple-converted-space">  </span>m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)</p>
-<p class="p1"><span class="Apple-converted-space">  </span>})(window,document,'script','//www.google-analytics.com/analytics.js','<span class="s1">ga</span>');</p>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;body&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span><span class="s1">ga</span>('create', 'UA-48213380-1', 'ebi.ac.uk');</p>
-<p class="p1"><span class="Apple-converted-space">  </span><span class="s1">ga</span>('send', '<span class="s1">pageview</span>');</p>
+<p class="p1">&lt;h1&gt;Ashwini Kumar&lt;/h1&gt;</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;/script&gt; <span class="Apple-converted-space">   </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/body&gt;</p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p3"><br></p>
 </body>
 </html>
